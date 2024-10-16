@@ -19,7 +19,7 @@ gather_tex() {
             if [[ "$line" =~ \\input\{(.+)\} ]]; then
                 local input_path="${BASH_REMATCH[1]}.tex"
                 if [[ -f "$input_path" ]]; then
-                    echo "Processing $input_path"
+                    # echo "Processing $input_path"
                     cat "$input_path" >> "$temp_file"
                 else
                     echo "Warning: File $input_path not found."

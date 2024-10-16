@@ -42,8 +42,8 @@ count_IMRaD() {
         local section_tex="./src/$section.tex"
         if [ -e "$section_tex" ]; then
             _count_words "$section_tex" "$WORDCOUNT_DIR/${section}_count.txt"
-            echo $section_tex            
-            cat "$WORDCOUNT_DIR/${section}_count.txt"            
+            # echo $section_tex
+            # cat "$WORDCOUNT_DIR/${section}_count.txt"
         else
             echo 0 > "$WORDCOUNT_DIR/${section}_count.txt"
         fi
