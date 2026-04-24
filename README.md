@@ -1,3 +1,22 @@
+# ⚠️ This repository has moved
+
+This template is now maintained inside the **[scitex-template](https://github.com/ywatanabe1989/scitex-template)** monorepo at `templates/paper/`.
+
+## Migration
+
+```bash
+pip install scitex-template
+
+# Python
+from scitex_template import clone_template_from_cache
+clone_template_from_cache("paper", "./my-paper")
+```
+
+See: https://github.com/ywatanabe1989/scitex-template/tree/main/templates/paper
+
+This repository is archived for history and will no longer receive updates.
+
+---
 # SciTeX: AI-assisted Template for Scientific Manuscripts
 
 ![Demo GIF](./src/.demo.gif)
